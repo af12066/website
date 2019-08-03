@@ -23,6 +23,8 @@ AWS上でKubernetesクラスターを作成するには、AWSからアクセス�
 
 * CoreOSから生まれ、Kubernetes IncubatorがメンテナンスしているCLIツール[kube-aws](https://github.com/kubernetes-incubator/kube-aws)は、AWSツール(EC2、CloudFormation、Auto Scaling) を使用して[Container Linux](https://coreos.com/why/)ノードを含むKubernetesクラスターを作成および管理できます。
 
+* [KubeOne](https://github.com/kubermatic/kubeone) is an open source cluster lifecycle management tool that creates, upgrades and manages Kubernetes Highly-Available clusters.
+
 {{% /capture %}}
 
 {{% capture steps %}}
@@ -77,8 +79,7 @@ IaaS Provider        | Config. Mgmt | OS            | Networking  | Docs        
 AWS                  | kops         | Debian        | k8s (VPC)   | [docs](https://github.com/kubernetes/kops)    |          | Community ([@justinsb](https://github.com/justinsb))
 AWS                  | CoreOS       | CoreOS        | flannel     | [docs](/docs/getting-started-guides/aws)      |          | Community
 AWS                  | Juju         | Ubuntu        | flannel, calico, canal     | [docs](/docs/getting-started-guides/ubuntu)      | 100%     | Commercial, Community
-
-For support level information on all solutions, see the [Table of solutions](/docs/getting-started-guides/#table-of-solutions) chart.
+AWS                  | KubeOne         | Ubuntu, CoreOS, CentOS   | canal, weavenet     | [docs](https://github.com/kubermatic/kubeone)      | 100%    | Commercial, Community
 
 ## 参考文献
 
